@@ -1,6 +1,49 @@
 # magsense
 Vibro-magnetic wearables for hand-to-face contact prevention.
 
-“Don’t touch your face” is seemingly simple advice. Since coronaviruses are stable for days on many surfaces, a person can get COVID-19 by touching a contaminated handle or object and then touching their own mouth, nose, or possibly eyes. But quitting is far easier said than done. Most people touch their face frequently throughout the day, usually without thinking about it—it’s a very difficult habit to break and requires a surprising amount of conscious effort.
+# “Don’t touch your face!” 
+It is a seemingly simple advice. Since coronaviruses are stable for days on many surfaces, a person can get COVID-19 by touching a contaminated handle or object and then touching their own mouth, nose, or possibly eyes. But quitting is far easier said than done. Most people touch their face frequently throughout the day, usually without thinking about it—it’s a very difficult habit to break and requires a surprising amount of conscious effort.
 
-The MIT Media Lab is advancing Saving Face: a suite of easily scaled technologies to help people fight the pandemic by warning them when they’re about to touch their faces. We have designed a device to activate a vibration motor when the hand and face get too close, as detected using magnetic fields. In this prototype, magnetic rings or bracelets on both hands are detected by a magnetic sensor worn around the neck as a necklace or collar clip-on.
+The MIT Media Lab is advancing Saving Face: a suite of easily scaled technologies to help people fight the pandemic by warning them when they’re about to touch their faces. As one solution, **we have designed a wearable device that vibrates when the hand and face get too close, as detected using magnetic fields.** Magnetic rings or bracelets on both hands are detected by a magnetometer worn around the neck as a necklace or a clip-on. We provide two approaches in deploying these vibro-magnetic wearables by assembling off-the-shelf components or manufacturing our customized hardware.
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+# Contents
+**Electronics/** - Hardware PCB files for the customized magsense board in Autodesk Eagle
+
+**Mechanical/** - Hardware STL files for 3D-printing packaging, necklace and clip-on version
+
+**Libraries/** - Collection of the Arduino libraries required for the sensor
+
+**Firmware/** - Firmware for magsense
+
+
+# Getting started
+To quickly prototype magsense, you can use a small microcontroller such as Trinket M0, ATtiny85, or Arduino/Adafruit Gemma. Connect the microcontroller to a high-performance magnetometer breakout (in this case LIS2MDL, with +/- 50 gauss magnetic range and 1.5 mgauss sensitivity) through I2C. Connect one digital output of the micro-controller to drive a vibration motor through a transistor with a base resistor (see Electronics/ hardware PCB schematic for connections). Finally, plug in a rechargable Li-Poly battery, download and move corresponding libraries (Libraries/) to Arduino libraries folder, and upload the sketch (Firmware/) through Arduino IDE. All of these components can be found in Adafruit, SparkFun, Amazon, or eBay easily. You can also print the packaging and clip-on structure (Mechanical/) if you have access to a 3D printer and purchase or make your own necklace cord.
+
+We have also designed a miniaturized customized hardware (Electronics/) that will significantly reduce the cost and form-factor of magsense. This development is meant for large-scale manufacturing and deployment.
+
+# Firmware
+
+After plugging a micro-USB cable to both computer and micro-controller and moving the LIS2MDL libraries (Libraries/) to your Arduino libraries, you can select your corresponding Board, Port, and Programmer in Arduino IDE/Tools. For ATtiny85 boards, use USBTinyiSP, for M0 use ArduinoISP in the Programmer. Push the reset button in your Trinket/Gemma, wait for programming LED to blink, and then upload the sketch (Firmware/). 
+
+# Known issues
+
+Try to use Neodymium magnets. The stronger the magnet, the easier it is for the magnetometer to detect its presence and the higher its sensing range. Neodymium magnet rings work well, but ensure it has the right magnet orientation. For different magnet rings and bracelets, you need to calibrate your own threshold by changing the values of the variables provided in Firmware/.
+
+# Manufacturing 
+There are three parts needed for manufacturing: production of the printed circuit boards, sourcing the electronic parts, and assembly (soldering components and packaging). We encourage manufacturing magsense from the source files (/Electronics and /Mechanical). There are numerous board houses local and international that you can use (such as OSHpark or seeedstudio) and rigid PCBs are very affordable now even in small to mid-quantities ($4 for 10 pieces, even lower for higher quantities). Note that the prices in the US are relatively higher than in the China. 
+
+The parts can be bought easily from US-based large electronics sellers such as Digikey.com or Mouser. If you want the parts cheaper, go through Alibaba.com. It is more difficult, but can be cheaper especially for the ICs.
+
+The assembly can be also done by a factory, using high-throughput machines. It is possible to pick-and-place and solder manually, but it requires a lot of patience and good reflow oven with temperature distribution profile. There are numerous assembly houses in the US, such as Advanced Circuits or PCBway. They have reasonable prices (around a thousand for large quantities). There are also assembly houses in China that area significantly cheaper, but they are more difficult to contact. For more than 1000 productions, for example, we can estimate each magsense with the rings would cost approximately 5-7 USD.
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+# Acknowledgements
+**Saving Face Team:** Irmandy Wicaksono, Camilo Rojas, Niels Poulsen, Zhi Wei Gan, Eyal Perry, and Tomas Vega. 
+
+**Advisors:** Kevin Esvelt, Joe Paradiso, Pattie Maes, and Fadel Adib. 
+
+**Video and Content Editting:** Guadalupe Babilo, Nicolas Ayub, and Janine Liberty.
+
