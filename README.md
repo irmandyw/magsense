@@ -2,7 +2,7 @@
 Open-souce vibro-magnetic wearables for hand-to-face contact prevention.
 
 # “Don’t touch your face!” 
-It is a seemingly simple advice. Since coronaviruses are stable for days on many surfaces, a person can get COVID-19 by touching a contaminated handle or object and then touching their own mouth, nose, or possibly eyes. But quitting is far easier said than done. Most people touch their face frequently throughout the day, usually without thinking about it—it’s a very difficult habit to break and requires a surprising amount of conscious effort.
+It is a seemingly simple advice. Since coronaviruses are stable for days on many surfaces 🦠, a person can get COVID-19 by touching a contaminated handle or object and then touching their own mouth, nose, or possibly eyes. But quitting is far easier said than done. Most people touch their face frequently throughout the day, usually without thinking about it—it’s a very difficult habit to break and requires a surprising amount of conscious effort.
 
 The MIT Media Lab is advancing Saving Face: a suite of easily scaled technologies to help people fight the pandemic by warning them when they’re about to touch their faces. As one of the solutions, **we have designed *magsense*, a wearable device that vibrates when the hand and face get too close, based on magnetic field sensing.** Magnetic rings or bracelets on both hands are detected by a magnetometer worn around the neck as a necklace or a clip-on. We provide two approaches in deploying *magsense* wearables by assembling off-the-shelf components or manufacturing our customized hardware.
 
