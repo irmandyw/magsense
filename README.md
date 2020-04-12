@@ -1,5 +1,5 @@
 # magsense
-Open-souce vibro-magnetic wearables for hand-to-face contact prevention.
+Open-souce low-cost vibro-magnetic wearables for hand-to-face contact prevention.
 
 # “Don’t touch your face!” 
 It is a seemingly simple advice. Since coronaviruses are stable for days on many surfaces 🦠, a person can get COVID-19 by touching a contaminated handle or object and then touching their own mouth, nose, or possibly eyes. But quitting is far easier said than done. Most people touch their face frequently throughout the day, usually without thinking about it—it’s a very difficult habit to break and requires a surprising amount of conscious effort.
