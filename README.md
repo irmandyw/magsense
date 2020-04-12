@@ -51,7 +51,7 @@ The electronic parts can be purchased from large electronic component distributo
 
 **Advisors:** Kevin Esvelt, Joe Paradiso, Pattie Maes, and Fadel Adib. 
 
-**Video Editting:** Guadalupe Babilo and Nicolas Ayub.
+**Video and Content Editting:** Guadalupe Babilo and Nicolas Ayub.
 
 
 <img src="https://github.com/irmandyw/magsense/blob/master/Images/magsense.gif" width="425" height="225"><img src="https://github.com/irmandyw/magsense/blob/master/Images/Mit_medialab_logo.png" width="425" height="225">
