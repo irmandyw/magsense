@@ -27,7 +27,7 @@ To quickly prototype *magsense*, you can use a small microcontroller such as Tri
 
 We have also designed a miniaturized customized hardware (Electronics/) that will significantly reduce the cost and form-factor of *magsense*. This development is meant for large-scale manufacturing and deployment.
 
-<img src="https://github.com/irmandyw/magsense/blob/master/Electronics/magsense_pcb.png" width="850"> 
+<img src="https://github.com/irmandyw/magsense/blob/master/Electronics/magsense_pcb.png"> 
 
 **Customized hardware PCB design**
 
