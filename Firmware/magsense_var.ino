@@ -1,4 +1,4 @@
-#include <Adafruit_LIS2MDL.h>
+#include <LIS2MDL.h>
 #include <Adafruit_Sensor.h>
 #include <Wire.h>
 
